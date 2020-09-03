@@ -168,8 +168,8 @@ public:
 			{
 				vec screen_pixel((double)x, (double)y, 0);
 				vec ray = screen_pixel - eye;
-				// double pixel_depth = get_depth(ray, t_original);
-				double pixel_depth = max(t_original.p.z, max(t_original.q.z, t_original.r.z));
+				double pixel_depth = get_depth(ray, t_original);
+				// double pixel_depth = max(t_original.p.z, max(t_original.q.z, t_original.r.z));
 				if(pixel_depth > depth_buffer[y+500][x+500])
 				{
 					screen_buffer[y+500][x+500] = brt;

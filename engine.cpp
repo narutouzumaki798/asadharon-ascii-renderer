@@ -196,21 +196,21 @@ int main()
 		//usleep(8000);
 		//break;
 
-		a.render(link1);
-		link1.rotatey(2.5);
-		link1.translate(0, movement, zoom);
-		ampl = -3.5;
+		//a.render(link1);
+		//link1.rotatey(2.5);
+		//link1.translate(0, movement, zoom);
+		//ampl = -3.5;
 
-		//a.render(mario1);
-		//mario1.rotatey(2.5);
-		//mario1.translate(0, movement, zoom);
-		//ampl = -2.5;
+		a.render(mario1);
+		mario1.rotatey(2.5);
+		mario1.translate(0, movement, zoom);
+		ampl = -2.5;
 
 		movement = ampl*cos(theta);
-		theta = theta + 0.018;
+		theta = theta + 0.008;
 
 		time1 = (time1+1)%1000;
-		usleep(5000);
+		//usleep(50000);
 	}
 
 	getch();
