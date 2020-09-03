@@ -1,0 +1,9 @@
+file=engine.cpp
+
+if g++ $file -lncurses; then
+	echo -e "\n\ncompile hoe geche\n"
+	./a.out
+else
+	echo -e "\nhocche na\n\n"
+	g++ $file -lncurses 2>&1 | head
+fi
